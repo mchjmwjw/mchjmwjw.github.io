@@ -1,0 +1,121 @@
+/* line 5, ../sass/xLoading.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* line 11, ../sass/xLoading.scss */
+html, body {
+  min-height: 100%;
+}
+
+/* line 15, ../sass/xLoading.scss */
+body {
+  background: radial-gradient(#eeeeee, #444444);
+}
+
+/* line 19, ../sass/xLoading.scss */
+.loader {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 175px;
+  height: 100px;
+}
+/* line 28, ../sass/xLoading.scss */
+.loader span {
+  display: block;
+  background: #ccc;
+  width: 7px;
+  height: 10%;
+  border-radius: 14px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 25%;
+}
+/* line 37, ../sass/xLoading.scss */
+.loader span:last-child {
+  margin-right: 0px;
+}
+/* line 40, ../sass/xLoading.scss */
+.loader span:nth-child(1) {
+  animation: load 2.5s 1.4s infinite linear;
+}
+/* line 43, ../sass/xLoading.scss */
+.loader span:nth-child(2) {
+  animation: load 2.5s 1.2s infinite linear;
+}
+/* line 46, ../sass/xLoading.scss */
+.loader span:nth-child(3) {
+  animation: load 2.5s 1s infinite linear;
+}
+/* line 49, ../sass/xLoading.scss */
+.loader span:nth-child(4) {
+  animation: load 2.5s 0.8s infinite linear;
+}
+/* line 52, ../sass/xLoading.scss */
+.loader span:nth-child(5) {
+  animation: load 2.5s 0.6s infinite linear;
+}
+/* line 55, ../sass/xLoading.scss */
+.loader span:nth-child(6) {
+  animation: load 2.5s 0.4s infinite linear;
+}
+/* line 58, ../sass/xLoading.scss */
+.loader span:nth-child(7) {
+  animation: load 2.5s 0.2s infinite linear;
+}
+/* line 61, ../sass/xLoading.scss */
+.loader span:nth-child(8) {
+  animation: load 2.5s 0s infinite linear;
+}
+/* line 64, ../sass/xLoading.scss */
+.loader span:nth-child(9) {
+  animation: load 2.5s 0.2s infinite linear;
+}
+/* line 67, ../sass/xLoading.scss */
+.loader span:nth-child(10) {
+  animation: load 2.5s 0.4s infinite linear;
+}
+/* line 70, ../sass/xLoading.scss */
+.loader span:nth-child(11) {
+  animation: load 2.5s 0.6s infinite linear;
+}
+/* line 73, ../sass/xLoading.scss */
+.loader span:nth-child(12) {
+  animation: load 2.5s 0.8s infinite linear;
+}
+/* line 76, ../sass/xLoading.scss */
+.loader span:nth-child(13) {
+  animation: load 2.5s 1s infinite linear;
+}
+/* line 79, ../sass/xLoading.scss */
+.loader span:nth-child(14) {
+  animation: load 2.5s 1.2s infinite linear;
+}
+/* line 82, ../sass/xLoading.scss */
+.loader span:nth-child(15) {
+  animation: load 2.5s 1.4s infinite linear;
+}
+
+@keyframes load {
+  0% {
+    background: #ccc;
+    margin-top: 25%;
+    height: 10%;
+  }
+  50% {
+    background: #444;
+    height: 100%;
+    margin-top: 0%;
+  }
+  100% {
+    background: #ccc;
+    height: 10%;
+    margin-top: 25%;
+  }
+}
