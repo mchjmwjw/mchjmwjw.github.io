@@ -3,66 +3,38 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>用循环将三个DIV变成红色</title>
-    <style>
-    #outer {
-        width: 330px;
-        height: 100px;
-        margin: 10px auto;
-    }
-
-    #outer div {
-        float: left;
-        width: 100px;
-        height: 100px;
-        margin: 0 5px;
-        background: black;
-        /*animation-name: example;
-        animation-duration: 4s;*/
-    }
-
-    @keyframes example {
-        from {background-color: black;}
-        45% {background-color: red;}
-        55% {background-color: red;}
-        to {background-color: black;}
-    }
-
-    </style>
-    <script>
-    window.onload = function() {
-        var oDiv = document.getElementById("outer").getElementsByTagName("div");
-        var oBtn = document.getElementsByTagName("button")[0];
-        var lock = false;
-        function cancel() {
-            for(var i = 0; i < oDiv.length; i++) {
-                oDiv[i].style["animation-name"] = "";
-            }
-            lock = false;
-        }
-        oBtn.onclick = function() {
-            //for (var i = 0; i < oDiv.length; i++) oDiv[i].style.background = "red";
-            if(!lock) {
-                lock = true;
-                for(var i = 0; i < oDiv.length; i++) {
-                    oDiv[i].style["animation-name"] = "example";
-                    oDiv[i].style["animation-duration"] = "8s";
-                }
-                setTimeout(cancel,8000);
-            }
-        }
-    }
-    </script>
+    <title>Day Day Up</title>
+    <link rel="stylesheet" type="text/css" href="./css/_toRed.css" />
+    <link rel="stylesheet" type="text/css" href="./css/_xloading.css" />
+    <script type="text/javascript" src="./js/toRed.js"></script>
 </head>
 
 <body>
     <center>
-        <button>点击将DIV变成红色</button>
+        <button id="btn_red">Please Push</button>
     </center>
     <div id="outer">
         <div></div>
         <div></div>
         <div></div>
+    </div>
+
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 </body>
 
